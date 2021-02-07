@@ -1,3 +1,5 @@
+import 'package:Connect_buddy/components/headers.dart';
+import 'package:Connect_buddy/components/normalText.dart';
 import 'package:Connect_buddy/components/rounded_button.dart';
 import 'package:flutter/material.dart';
 
@@ -9,8 +11,8 @@ class AboutScreen extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: size.height,
-        child: Stack(
-          alignment: Alignment.center,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Positioned(
               top: 0,
@@ -34,7 +36,11 @@ class AboutScreen extends StatelessWidget {
                 'assets/images/logo.PNG',
                 width: size.width * 0.9,
               ),
-            )
+            ),
+            HeaderText(text: 'Welcome to “Connect\nBuddy”'),
+            NormalText(
+                text:
+                    'The all in one internet connectivity app \nthat assists you to not only secure a\nreliable Wifi connection by connecting to\nnearby networks, but also allows you to\ntroubleshoot issues relating to your\nhomes Wifi network.'),
           ],
         ),
       ),
