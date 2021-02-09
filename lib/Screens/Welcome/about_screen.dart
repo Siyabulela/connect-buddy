@@ -1,14 +1,21 @@
+import 'package:Connect_buddy/Screens/Welcome/connect_screen.dart';
+import 'package:Connect_buddy/Screens/Welcome/find_screen.dart';
+import 'package:Connect_buddy/Screens/Welcome/search_Screen.dart';
+import 'package:Connect_buddy/Screens/Welcome/login_Screen.dart';
 import 'package:Connect_buddy/components/headers.dart';
 import 'package:Connect_buddy/components/normalText.dart';
 import 'package:Connect_buddy/components/rounded_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
-import 'second_screen.dart';
-import 'third_screen.dart';
-
 
 class QuoteApp extends StatelessWidget {
-  List<Widget> pages = [AboutScreen(), SecondScreen(), ThirdScreen()];
+  List<Widget> pages = [
+    AboutScreen(),
+    SearchScreen(),
+    FindScreen(),
+    ConnectScreen(),
+    LoginScreen()
+  ];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
