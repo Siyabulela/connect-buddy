@@ -2,6 +2,7 @@ import 'package:Connect_buddy/Screens/Welcome/connect_screen.dart';
 import 'package:Connect_buddy/Screens/Welcome/find_screen.dart';
 import 'package:Connect_buddy/Screens/Welcome/search_Screen.dart';
 import 'package:Connect_buddy/Screens/Welcome/login_Screen.dart';
+import 'package:Connect_buddy/Screens/Welcome/signup_screen.dart';
 import 'package:Connect_buddy/components/headers.dart';
 import 'package:Connect_buddy/components/normalText.dart';
 import 'package:Connect_buddy/components/rounded_button.dart';
@@ -14,7 +15,8 @@ class QuoteApp extends StatelessWidget {
     SearchScreen(),
     FindScreen(),
     ConnectScreen(),
-    LoginScreen()
+    LoginScreen(),
+    SignupScreen()
   ];
   @override
   Widget build(BuildContext context) {

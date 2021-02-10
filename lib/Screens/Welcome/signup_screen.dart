@@ -5,8 +5,8 @@ import 'package:Connect_buddy/constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class LoginScreen extends StatelessWidget {
-  const LoginScreen({Key key}) : super(key: key);
+class SignupScreen extends StatelessWidget {
+  const SignupScreen({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class LoginScreen extends StatelessWidget {
         width: double.infinity,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: new AssetImage("assets/images/login.png"),
+            image: new AssetImage("assets/images/signup.png"),
             fit: BoxFit.cover,
           ),
         ),
@@ -25,10 +25,10 @@ class LoginScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             SizedBox(
-              height: 100,
+              height: 160,
             ),
             Text(
-              "Hello,\nWelcome Back",
+              "Create\nyour account",
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 40,
@@ -36,6 +36,28 @@ class LoginScreen extends StatelessWidget {
             ),
             SizedBox(
               height: 60,
+            ),
+            TextField(
+              decoration: InputDecoration(
+                  prefixIcon: Icon(Icons.person_outlined),
+                  hintText: "First name and last name",
+                  hintStyle: TextStyle(color: Colors.white),
+                  border: UnderlineInputBorder(
+                      borderSide: BorderSide(color: const Color(0xFF424242)))),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            TextField(
+              decoration: InputDecoration(
+                  prefixIcon: Icon(Icons.phone_outlined),
+                  hintText: "Phone number",
+                  hintStyle: TextStyle(color: Colors.white),
+                  border: UnderlineInputBorder(
+                      borderSide: BorderSide(color: const Color(0xFF424242)))),
+            ),
+            SizedBox(
+              height: 10,
             ),
             TextField(
               decoration: InputDecoration(
@@ -50,54 +72,41 @@ class LoginScreen extends StatelessWidget {
             ),
             TextField(
               decoration: InputDecoration(
-                  prefixIcon: Icon(Icons.lock_open_outlined),
+                  prefixIcon: Icon(Icons.lock_outlined),
                   hintText: "Password",
                   hintStyle: TextStyle(color: Colors.white),
-                  suffixIcon: Icon(Icons.remove_red_eye),
+                  suffixIcon: Icon(Icons.remove_red_eye_outlined),
                   border: UnderlineInputBorder(
                       borderSide: BorderSide(color: const Color(0xFF424242)))),
             ),
             SizedBox(
               height: 10,
             ),
-            Text(
-              "                                                                    I forgot my password?",
-              style: TextStyle(color: Colors.white),
-              textAlign: TextAlign.center,
+            TextField(
+              decoration: InputDecoration(
+                  prefixIcon: Icon(Icons.lock_outlined),
+                  hintText: "Confirm Password",
+                  hintStyle: TextStyle(color: Colors.white),
+                  suffixIcon: Icon(Icons.remove_red_eye_outlined),
+                  border: UnderlineInputBorder(
+                      borderSide: BorderSide(color: const Color(0xFF424242)))),
             ),
             SizedBox(
-              height: 170,
+              height: 100,
             ),
             RoundedButton(
-              text: 'Login',
+              text: 'Sign Up',
               press: () {},
               width: size.width * 0.9,
-              color: kPrimaryLightColor,
+              color: kPrimaryColor,
             ),
             SizedBox(
               height: 10,
             ),
             Text(
-              "                           Don't have an account? Sign Up",
+              "                           Already have an account? Sign In",
               style: TextStyle(color: Colors.white),
               textAlign: TextAlign.center,
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Text(
-              "---------------------------------------------- OR ----------------------------------------------",
-              style: TextStyle(color: Colors.white),
-              textAlign: TextAlign.center,
-            ),
-            SizedBox(
-              height: 40,
-            ),
-            RoundedButton(
-              text: 'Continue with Google',
-              press: () {},
-              width: size.width * 0.9,
-              color: kPrimaryLightColor,
             ),
           ],
         ),
