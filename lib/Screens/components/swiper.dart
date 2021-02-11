@@ -1,7 +1,7 @@
 import 'package:Connect_buddy/Screens/Welcome/connect_screen.dart';
-import 'package:Connect_buddy/Screens/Welcome/about_screen.dart';
-import 'package:Connect_buddy/Screens/Welcome/find_screen.dart';
-import 'package:Connect_buddy/Screens/Welcome/search_Screen.dart';
+import 'package:Connect_buddy/Screens/about_screen.dart';
+import 'package:Connect_buddy/Screens/find_screen.dart';
+import 'package:Connect_buddy/Screens/search_Screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
