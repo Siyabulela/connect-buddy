@@ -13,7 +13,7 @@ class StartState extends State<SplashScreen> {
   void initState() {
     super.initState();
     startTimer();
-  }
+  } 
 
   startTimer() async {
     var duration = Duration(seconds: 4);

@@ -1,6 +1,6 @@
 import 'package:Connect_buddy/Screens/Welcome/components/headers.dart';
 import 'package:Connect_buddy/Screens/Welcome/components/normalText.dart';
-import 'package:Connect_buddy/Screens/Welcome/components/rounded_button.dart';
+import 'package:Connect_buddy/Screens/Welcome/components/rounded_button.dart'; 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

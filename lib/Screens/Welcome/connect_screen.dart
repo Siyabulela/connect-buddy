@@ -5,6 +5,7 @@ import 'package:Connect_buddy/Screens/Welcome/components/rounded_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+
 class ConnectScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

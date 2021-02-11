@@ -10,7 +10,7 @@ class NormalText extends StatelessWidget {
     this.color = kPrimaryLightColor,
     this.textColor = kPrimaryColor,
   }) : super(key: key);
-
+ 
   @override
   Widget build(BuildContext context) {
     //Size size = MediaQuery.of(context).size;
