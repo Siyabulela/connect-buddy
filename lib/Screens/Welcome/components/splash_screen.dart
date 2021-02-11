@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:Connect_buddy/Screens/components/swiper.dart';
+import 'package:Connect_buddy/Screens/Welcome/components/swiper.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
