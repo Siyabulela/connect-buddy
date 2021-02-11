@@ -1,3 +1,4 @@
+import 'package:Connect_buddy/Screens/Welcome/login_screen.dart';
 import 'package:Connect_buddy/components/headers.dart';
 import 'package:Connect_buddy/components/normalText.dart';
 import 'package:Connect_buddy/components/rounded_button.dart';
@@ -21,16 +22,7 @@ class ConnectScreen extends StatelessWidget {
               right: 0,
               child: RoundedButton(
                 text: 'English',
-                press: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) {
-                        return ConnectScreen();
-                      },
-                    ),
-                  );
-                },
+                press: () {},
               ),
             ),
             Positioned(
@@ -43,6 +35,23 @@ class ConnectScreen extends StatelessWidget {
             NormalText(
                 text:
                     'You are able to request to as many\navailabe connections there are. Just have\nyour tokens ready and begin the reliable\ninternet connection journey of your\ndreams'),
+            Positioned(
+              top: 0,
+              right: 0,
+              child: RoundedButton(
+                text: 'Get started',
+                press: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return LoginScreen();
+                      },
+                    ),
+                  );
+                },
+              ),
+            ),
           ],
         ),
       ),

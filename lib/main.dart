@@ -1,7 +1,5 @@
+import 'package:Connect_buddy/Screens/Welcome/components/splash_screen.dart';
 import 'package:flutter/material.dart';
-// import 'package:Connect_buddy/Screens/Welcome/welcome_screen.dart';
-// import 'package:Connect_buddy/constants.dart';
-import 'screens/welcome/components/body.dart';
 
 void main() {
   runApp(MyApp());

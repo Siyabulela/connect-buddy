@@ -7,8 +7,8 @@ class HeaderText extends StatelessWidget {
   const HeaderText({
     Key key,
     this.text,
-    this.color = kPrimaryColor,
-    this.textColor = kPrimaryLightColor,
+    this.color = kPrimaryLightColor,
+    this.textColor = kPrimaryColor,
   }) : super(key: key);
 
   @override

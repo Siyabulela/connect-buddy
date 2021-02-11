@@ -4,6 +4,7 @@ import 'package:Connect_buddy/components/rounded_button.dart';
 import 'package:Connect_buddy/constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({Key key}) : super(key: key);
@@ -38,6 +39,7 @@ class SignupScreen extends StatelessWidget {
               height: 60,
             ),
             TextField(
+              keyboardType: TextInputType.name,
               decoration: InputDecoration(
                   prefixIcon: Icon(Icons.person_outlined),
                   hintText: "First name and last name",
@@ -49,6 +51,7 @@ class SignupScreen extends StatelessWidget {
               height: 10,
             ),
             TextField(
+              keyboardType: TextInputType.number,
               decoration: InputDecoration(
                   prefixIcon: Icon(Icons.phone_outlined),
                   hintText: "Phone number",
@@ -60,6 +63,7 @@ class SignupScreen extends StatelessWidget {
               height: 10,
             ),
             TextField(
+              keyboardType: TextInputType.emailAddress,
               decoration: InputDecoration(
                   prefixIcon: Icon(Icons.email_outlined),
                   hintText: "Email",
@@ -71,6 +75,7 @@ class SignupScreen extends StatelessWidget {
               height: 10,
             ),
             TextField(
+              keyboardType: TextInputType.visiblePassword,
               decoration: InputDecoration(
                   prefixIcon: Icon(Icons.lock_outlined),
                   hintText: "Password",
@@ -83,6 +88,7 @@ class SignupScreen extends StatelessWidget {
               height: 10,
             ),
             TextField(
+              keyboardType: TextInputType.visiblePassword,
               decoration: InputDecoration(
                   prefixIcon: Icon(Icons.lock_outlined),
                   hintText: "Confirm Password",
@@ -98,7 +104,7 @@ class SignupScreen extends StatelessWidget {
               text: 'Sign Up',
               press: () {},
               width: size.width * 0.9,
-              color: kPrimaryColor,
+              color: kPrimaryLightColor,
             ),
             SizedBox(
               height: 10,
