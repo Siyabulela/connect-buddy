@@ -1,6 +1,8 @@
 import 'package:Connect_buddy/Screens/Welcome/components/rounded_button.dart';
+import 'package:Connect_buddy/Screens/Welcome/login_screen.dart';
 import 'package:Connect_buddy/constants.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -11,7 +13,7 @@ class SignupScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      body: Container( 
+      body: Container(
         padding: EdgeInsets.all(20),
         width: double.infinity,
         decoration: BoxDecoration(
@@ -107,10 +109,40 @@ class SignupScreen extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            Text(
-              "                           Already have an account? Sign In",
-              style: TextStyle(color: Colors.white),
-              textAlign: TextAlign.center,
+            Row(
+              children: <Widget>[
+                Expanded(
+                  child: Text(
+                    "Already have an account?",
+                    textAlign: TextAlign.end,
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  flex: 2,
+                ),
+                Expanded(
+                  child: RichText(
+                    text: TextSpan(
+                      children: [
+                        TextSpan(
+                          text: " Sign In",
+                          style: TextStyle(color: kPrimaryLightColor),
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) {
+                                    return LoginScreen();
+                                  },
+                                ),
+                              );
+                            },
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),

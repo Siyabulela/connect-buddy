@@ -1,6 +1,8 @@
 import 'package:Connect_buddy/Screens/Welcome/components/rounded_button.dart';
+import 'package:Connect_buddy/Screens/Welcome/signup_screen.dart';
 import 'package:Connect_buddy/constants.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -11,7 +13,7 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      body: Container( 
+      body: Container(
         padding: EdgeInsets.all(20),
         width: double.infinity,
         decoration: BoxDecoration(
@@ -94,9 +96,26 @@ class LoginScreen extends StatelessWidget {
                   flex: 2,
                 ),
                 Expanded(
-                  child: Text(
-                    "  Sign Up",
-                    style: TextStyle(color: Colors.white),
+                  child: RichText(
+                    text: TextSpan(
+                      children: [
+                        TextSpan(
+                          text: " Sign Up",
+                          style: TextStyle(color: Colors.white),
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) {
+                                    return SignupScreen();
+                                  },
+                                ),
+                              );
+                            },
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ],

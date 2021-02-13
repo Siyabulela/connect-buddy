@@ -10,8 +10,8 @@ class SwiperFunction extends StatelessWidget {
     AboutScreen(),
     SearchScreen(),
     FindScreen(),
-    ConnectScreen()
-  ]; 
+    ConnectScreen(),
+  ];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
